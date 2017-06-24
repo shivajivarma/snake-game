@@ -18,22 +18,6 @@
 <script type="text/javascript">
 $(document).ready(function () {
 	snakeGame.init();
-	
-	//Lets add the keyboard controls now
-	$(document).keydown(function (e) {
-		var key = e.which;
-		//We will add another clause to prevent reverse gear
-		if (key == "37" && snakeGame.d != "right")
-			snakeGame.d = "left";
-		else if (key == "38" && snakeGame.d != "down")
-			snakeGame.d = "up";
-		else if (key == "39" && snakeGame.d != "left")
-			snakeGame.d = "right";
-		else if (key == "40" && snakeGame.d != "up")
-			snakeGame.d = "down";
-		//The snake is now keyboard controllable
-	});
-
 })
 </script>
 </body>
