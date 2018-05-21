@@ -156,7 +156,7 @@
 		if (nx == -1 || nx == this.canvas.width / this.cellWidth || ny == -1 || ny == this.canvas.height / this.cellWidth || this.checkCollision(nx, ny, this.snake)) {
 			if(this.best<this.score){
 				this.best = this.score;
-				$('#best').html('Best &nbsp;: '+this.best);
+				$('#best-score').text(this.best);
 			}
 				
 			//restart game
@@ -196,7 +196,7 @@
 		//Lets paint the food
 		this.paintCell(this.food.x, this.food.y);
 		//Display score
-		$("#score").html("Score: " + this.score);
+		$("#score").text(this.score);
 	}
 
 
