@@ -183,3 +183,9 @@ class SnakeGame {
         this.scoreElem.textContent = this.score;
     }
 }
+
+// Initialize the game when DOM content is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+    const game = new SnakeGame();
+    game.init();
+});
